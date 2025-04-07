@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+                           
+	<bean class="Problem2.Spring3.Location" name="location1">
+	<!--In name="location1" ,location1 variable is present in the Person class-->
+		<property name="street" value="Block man street" />
+		<property name="city" value="Kolkata" />
+	</bean>
+	
+	<bean class="Problem2.Spring3.Location" name="location2">
+	<!--In name="location2" ,location2 variable is present in the Person class-->
+		<property name="street" value="Stock man street" />
+		<property name="city" value="Pune" />
+	</bean>
+	
+	<bean class="Problem2.Spring3.Person" name="per" autowire="byName" />
+</beans>

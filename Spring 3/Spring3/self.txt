@@ -1,0 +1,7 @@
+Autowiring using-
+	XML file-
+	  -byName
+	  -byType
+	  -constructor
+	Annotation(@Autowired)
+Use of @Qualifier
