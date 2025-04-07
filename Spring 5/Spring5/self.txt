@@ -1,0 +1,16 @@
+1.Use of @Component and @value
+
+2.Use of Configure bean scope
+without use of @Scope("") in Person class
+
+3.Use of Configure bean scope
+Use of @Scope("") in Person class
+
+4.Spring Expression Language 
+Use of @Value("#{Expression}")
+
+Invoke static method and variable:
+  	-@Value("#{T(class).method(parameter)}")
+  	-@Value("#{T(class).variable}")
+
+Use of @Value("#{new object(value)}")
