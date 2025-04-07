@@ -1,0 +1,49 @@
+Spring1:
+	Injecting dependencies using:
+	1.setter method.
+	2.constructor method.
+
+
+	2)Make beans
+
+	3)make POJO class.
+Spring2:
+	Implementing LifeCycle using-
+	-XML file
+	-Interface
+	-annotation
+Spring3:
+	Autowiring using-
+	XML file-
+	  -byName
+	  -byType
+	  -constructor
+	Annotation(@Autowired)
+	Use of @Qualifier
+Spring4:
+	Standalone Collection
+	-Standalone LinkedList
+	-Standalone Vector
+	-Standalone Map
+	-Standalone Properties
+Spring5:
+	1.Use of @Component and @value
+
+	2.Use of Configure bean scope
+	without use of @Scope("") in Person class
+
+	3.Use of Configure bean scope
+	Use of @Scope("") in Person class
+
+	4.Spring Expression Language 
+	Use of @Value("#{Expression}")
+	
+	Invoke static method and variable:
+  		-@Value("#{T(class).method(parameter)}")
+  		-@Value("#{T(class).variable}")
+
+
+	Use of @Value("#{new object(value)}")
+Spring6:
+	Replacing the XML file forever with different technique.
+
