@@ -1,0 +1,5 @@
+Standalone Collection
+	-Standalone LinkedList
+	-Standalone Vector
+	-Standalone Map
+	-Standalone Properties

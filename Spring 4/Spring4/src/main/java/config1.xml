@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd
+    ">
+    
+   <!-- define it once and use it for several times -->
+   <!-- Standalone LinkedList -->
+    <util:list list-class="java.util.LinkedList" id="fri">
+    	<value>Aman</value>
+    	<value>Amisha</value>
+    	<value>Amrit</value>
+    	<value>Amshad</value>
+    </util:list>
+    
+    <!-- define it once and use it for several times -->
+    <!-- Standalone Vector -->
+    <util:list list-class="java.util.Vector" id="tea">
+    	<value>Bireshwar</value>
+    	<value>Bittu</value>
+    	<value>Bikiiy</value>
+    	<value>Biswa</value>
+    </util:list>
+    
+    <!-- define it once and use it for several times -->
+    <!-- Standalone map -->
+    <util:map map-class="java.util.HashMap" id="fee">
+    	<entry key="Spring" value="8000" />
+    	<entry key="Django" value="3000" />
+    	<entry key="Java" value="2000" />
+    </util:map>
+   
+   <!-- define it once and use it for several times -->
+    <!-- Standalone properties -->
+    <util:properties id="dbconfig">
+    	<prop key="driver" >com.mysql.jdbc.Driver</prop>
+    	<prop key="username" >Anjali Kumari</prop>
+    	<prop key="password" >abc</prop>
+    	<prop key="url" >mysql:jdbc://localhost:3306/database</prop>
+    </util:properties>
+                 
+	<bean class="Problem1.Spring4.Employee" name="emp">
+		<property name="friends" ref="fri"/>    
+		<!-- name="friends" is a variable which is defined in Employee Class -->
+		<property name="teachers" ref="tea"/>    
+		<!-- name="teachers" is a variable which is defined in Employee Class -->
+		<property name="fees" ref="fee"/>    
+		<!-- name="fees" is a variable which is defined in Employee Class -->
+		<property name="properties" ref="dbconfig"/>    
+		<!-- name="fees" is a variable which is defined in Employee Class -->
+	<!-- 
+		<property name="friends">
+			<ref bean="mybestfrnds" />
+		</property>
+	 -->
+	</bean>
+</beans>
