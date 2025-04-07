@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!-- Here we changed the name of the init() method and destroy() method -->
+	<bean class="Problem2.Spring2.Student1" name="s2" init-method="hey" destroy-method="bye">
+		<property name="salary" value="1000000"/>
+	</bean>                           
+</beans>

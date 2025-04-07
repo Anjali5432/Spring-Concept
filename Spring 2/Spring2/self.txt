@@ -1,0 +1,4 @@
+Implementing LifeCycle using-
+	-XML file
+	-Interface
+	-annotation
