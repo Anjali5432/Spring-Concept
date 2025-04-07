@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- 1st way to insert the values -->
+	  <!--                      
+        <bean name="stud" class="Problem3.Spring3.Student1">
+        	<constructor-arg>
+        		<value>22</value>
+        	</constructor-arg>
+      	    <constructor-arg>
+        		<value>"Anjali"</value>
+        	</constructor-arg>
+        	<constructor-arg>
+        		<list>
+        			<value>111</value>
+        			<value>222</value>
+        			<value>333</value>
+        		</list>
+        	</constructor-arg>
+        	<constructor-arg>
+			<set>
+				<value>Kolkata1</value>
+				<value>Bihar1</value>
+				<value>Bhopal1</value>
+			</set>
+			</constructor-arg>
+			<constructor-arg>
+				<map>
+					<entry key="java1" value="2 months" />
+					<entry key="Kotlin1" value="3 months" />
+					<entry key="C++1" value="4 months" />
+				</map>
+			</constructor-arg>
+        </bean> 
+     -->      
+     <!-- 2nd way to insert the value-->   
+     <bean name="stud" class="Problem3.Spring3.Student1">
+     	<constructor-arg value="22" />
+        <constructor-arg value="Anjali" />
+        <constructor-arg value="[1111,2222,3333]" />
+        <constructor-arg value="[Kolkata2,Bihar2,Bhopal2]"/>   	
+        <!--  <property name="courses" value="{'java2':'2months', 
+        'Kotlin2':'3months' , 'C++2':'4 months' }" />     -->
+     </bean>                    
+</beans>

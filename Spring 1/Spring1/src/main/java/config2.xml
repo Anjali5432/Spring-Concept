@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 2nd way to make the beans -->
+                  
+	<!-- 1st bean -->
+	<bean name="stu1" class="Problem1.Spring1.Student">
+		<property name="studentId" value="1" />
+		<property name="studentName" value="Annu2" />
+		<property name="phones" value="[983011,628912,453213]" />
+		<property name="address" value="[Kolkata1 ,Bihar1,Bhopal1]" />
+		<!--  <property name="courses" value="{'java2':'2months',
+		'Kotlin2':'3months','C++2':'4 months' }" />-->
+	</bean>
+	
+	<!-- 2nd bean -->
+	<bean name="stu2" class="Problem1.Spring1.Student">
+		<property name="studentId" value="2" />
+		<property name="studentName" value="Anshu2" />	
+		<property name="phones" value="[983021,628922,453223]" />
+		<property name="address" value="[Kolkata2 ,Bihar2,Bhopal2]" />	
+	</bean>
+</beans>

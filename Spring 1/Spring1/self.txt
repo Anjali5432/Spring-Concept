@@ -1,0 +1,7 @@
+Injecting dependencies using:
+	1.setter method.
+	2.constructor method.
+
+2)Make beans
+
+3)make POJO class.

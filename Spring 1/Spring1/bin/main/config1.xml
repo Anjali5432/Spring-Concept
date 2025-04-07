@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 1st way to make the beans -->
+                  
+	<!-- 1st bean whose name is "stu1"-->
+	<bean name="stu1" class="Problem1.Spring1.Student">
+		<property name="studentId">
+			<value>1</value>
+		</property>
+		<property name="studentName">
+			<value>Annu1</value>
+		</property>
+		<property name="phones">
+			<list>
+				<value>983011</value>
+				<value>628912</value>
+				<value>453213</value>
+			</list>
+		</property>
+		<property name="address">
+			<set>
+				<value>Kolkata1</value>
+				<value>Bihar1</value>
+				<value>Bhopal1</value>
+			</set>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="java1" value="2 months" />
+				<entry key="Kotlin1" value="3 months" />
+				<entry key="C++1" value="4 months" />
+			</map>
+		</property>
+	</bean>
+	
+	<!-- 2nd bean whose name is "stu2"-->
+	<bean name="stu2" class="Problem1.Spring1.Student">
+		<property name="studentId">
+			<value>2</value>
+		</property>
+		<property name="studentName">
+			<value>Anshu1</value>
+		</property>
+		<property name="phones">
+			<list>
+				<value>983021</value>
+				<value>628922</value>
+				<value>453223</value>
+			</list>
+		</property>
+		<property name="address">
+			<set>
+				<value>Kolkata2</value>
+				<value>Bihar2</value>
+				<value>Bhopal2</value>
+			</set>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="java2" value="2 months" />
+				<entry key="Kotlin2" value="3 months" />
+				<entry key="C++2" value="4 months" />
+			</map>
+		</property>
+	</bean>
+</beans>

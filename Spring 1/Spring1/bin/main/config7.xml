@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <!-- 
+        <bean class="Program5.Spring5.Addition" name="add">
+        <constructor-arg value="30" />
+        <constructor-arg value="60" />
+        </bean>
+         -->
+        <!-- 
+        <bean class="Program5.Spring5.Addition" name="add">
+        <constructor-arg value="30" type="int" />
+        <constructor-arg value="60" type="int" />
+        </bean>
+         -->
+        <bean class="Program5.Spring5.Addition" name="add">
+        <constructor-arg value="30" index="1" />
+        <constructor-arg value="60" index="0" />
+        </bean>
+        <!-- 
+        <bean class="Program5.Spring5.Addition" name="add">
+        <constructor-arg value="30.1" type="double" />
+        <constructor-arg value="60.2" type="double" />
+        </bean>
+        -->
+        <!--
+        <bean class="Program5.Spring5.Addition" name="add">
+        <constructor-arg value="60.2" type="double" />
+        <constructor-arg value="30" type="int" />
+        </bean>
+        -->
+</beans>
